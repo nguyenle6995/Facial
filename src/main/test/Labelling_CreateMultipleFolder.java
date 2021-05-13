@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Ahihi {
+public class Labelling_CreateMultipleFolder {
     public WebDriver driver;
     LoginPage loginPage;
     Init init;
