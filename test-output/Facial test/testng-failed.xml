@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Facial test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Multiplefoldercreation(failed)">
+    <classes>
+      <class name="Labelling_CreateMultipleFolder">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Step03_CreateMultipleFolder"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- Labelling_CreateMultipleFolder -->
+    </classes>
+  </test> <!-- Multiplefoldercreation(failed) -->
+</suite> <!-- Failed suite [Facial test] -->

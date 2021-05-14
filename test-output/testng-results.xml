@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-14T03:17:07Z" name="Facial test" finished-at="2021-05-14T03:17:13Z" duration-ms="6079">
+    <groups>
+    </groups>
+    <test started-at="2021-05-14T03:17:07Z" name="Multiplefoldercreation" finished-at="2021-05-14T03:17:13Z" duration-ms="6079">
+      <class name="Labelling_CreateMultipleFolder">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Labelling_CreateMultipleFolder@49b0b76]" started-at="2021-05-14T03:17:07Z" name="beforeClass" finished-at="2021-05-14T03:17:09Z" duration-ms="2101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Step00_Init()[pri:0, instance:Labelling_CreateMultipleFolder@49b0b76]" started-at="2021-05-14T03:17:09Z" name="Step00_Init" finished-at="2021-05-14T03:17:09Z" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step00_Init -->
+        <test-method signature="Step01_Login()[pri:0, instance:Labelling_CreateMultipleFolder@49b0b76]" started-at="2021-05-14T03:17:09Z" name="Step01_Login" finished-at="2021-05-14T03:17:10Z" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step01_Login -->
+        <test-method signature="Step02_OpenLabellingPage()[pri:0, instance:Labelling_CreateMultipleFolder@49b0b76]" started-at="2021-05-14T03:17:10Z" name="Step02_OpenLabellingPage" finished-at="2021-05-14T03:17:11Z" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step02_OpenLabellingPage -->
+        <test-method signature="Step03_CreateMultipleFolder()[pri:0, instance:Labelling_CreateMultipleFolder@49b0b76]" started-at="2021-05-14T03:17:11Z" name="Step03_CreateMultipleFolder" finished-at="2021-05-14T03:17:12Z" duration-ms="1018" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User ID already exists! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User ID already exists! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at PageObject.LabellingPage.clickSaveNewEmployeePopup(LabellingPage.java:93)
+at Labelling_CreateMultipleFolder.Step03_CreateMultipleFolder(Labelling_CreateMultipleFolder.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step03_CreateMultipleFolder -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Labelling_CreateMultipleFolder@49b0b76]" started-at="2021-05-14T03:17:12Z" name="afterClass" finished-at="2021-05-14T03:17:13Z" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- Labelling_CreateMultipleFolder -->
+    </test> <!-- Multiplefoldercreation -->
+  </suite> <!-- Facial test -->
+</testng-results>

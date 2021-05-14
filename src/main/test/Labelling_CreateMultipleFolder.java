@@ -18,16 +18,18 @@ public class Labelling_CreateMultipleFolder {
     LabellingPage labelPage;
     List<String> data;
     int qty;
+
     @BeforeClass
-    public void beforeClass(){
+    public void beforeClass() {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//src//libs//chromedriver2.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("http://10.0.0.90:8081/login");
     }
+
     @AfterClass
-    public void afterClass(){
+    public void afterClass() {
         driver.quit();
     }
 
@@ -43,12 +45,14 @@ public class Labelling_CreateMultipleFolder {
         qty = Integer.parseInt(data.get(2).toString());
 
     }
-    @Test
+
+    @Test()
     public void Step01_Login() {
         loginPage.loginFunction("nguyenlh", "Nguyen.le!1");
     }
+
     @Test
-    public void Step02_OpenLabellingPage(){
+    public void Step02_OpenLabellingPage() {
         init.navigateToLabelling();
     }
 
@@ -67,5 +71,4 @@ public class Labelling_CreateMultipleFolder {
             labelPage.uploadImage(temp);
         }
     }
-
 }
